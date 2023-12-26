@@ -5,6 +5,11 @@ There is no simple way to export all network connections from an AVM Fritz!Box. 
 
 This python script takes the site's HTML and converts it into a CSV-file.
 
+## Requirements
+- python
+- csv-library
+- BeautifulSoup-library
+
 ## Steps
 
 1. Open Fritz!Box' network connections tab
