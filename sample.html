@@ -1,0 +1,107 @@
+<div class="flexTable netOverviewTable zebra" id="FlexTable7" role="table">
+    <div role="row" class="flexTableHeader buttonHeader">
+        <div role="columnheader" prefid="name" id="Name" class="flexHead sortable dyn2" style="width: 8rem;">Name<span
+                class="sortNo">&nbsp;</span></div>
+        <div role="columnheader" prefid="connect" id="Connect" defaultstate="show" class="flexHead sortable dyn2"
+            style="width: 8rem;">Verbindung<span class="sortNo">&nbsp;</span></div>
+        <div role="columnheader" prefid="ip" defaultstate="show" class="flexHead sortable dyn2" style="width: 5rem;">
+            IP-Adresse<span class="sortNo">&nbsp;</span></div>
+        <div role="columnheader" prefid="mac" defaultstate="hide" class="flexHead sortable dyn2" style="width: 5rem;">
+            MAC-Adresse<span class="sortNo">&nbsp;</span></div>
+        <div role="columnheader" prefid="props" defaultstate="show" class="flexHead sortable dyn2"
+            style="width: 5.5rem;">Eigenschaften<span class="sortNo">&nbsp;</span></div>
+        <div role="columnheader" class="flexHead netOverViewElemButtons dyn1 switcherSpace" style="width: 6rem;"></div>
+        <div class="switcher">
+            <div class="dropdown"><button class="dropdownBtn icon iconSwitcher" type="button"></button>
+                <div class="dropdownMenu">
+                    <div class="columnSwitcher">
+                        <div class="switchTitle">Spalten anzeigen</div>
+                        <div class="switchItem" id="switcher-connect">
+                            <div>Verbindung</div>
+                            <div><label class="switch"><input type="checkbox" class="no-watch" name="Verbindung"
+                                        checked="" data-column="1" data-pref-id="connect"><span
+                                        class="slider"></span></label></div>
+                        </div>
+                        <div class="switchItem" id="switcher-ip">
+                            <div>IP-Adresse</div>
+                            <div><label class="switch"><input type="checkbox" class="no-watch" name="IP-Adresse"
+                                        checked="" data-column="2" data-pref-id="ip"><span
+                                        class="slider"></span></label></div>
+                        </div>
+                        <div class="switchItem" id="switcher-mac">
+                            <div>MAC-Adresse</div>
+                            <div><label class="switch"><input type="checkbox" class="no-watch" name="MAC-Adresse"
+                                        data-column="3" data-pref-id="mac"><span class="slider"></span></label></div>
+                        </div>
+                        <div class="switchItem" id="switcher-props">
+                            <div>Eigenschaften</div>
+                            <div><label class="switch"><input type="checkbox" class="no-watch" name="Eigenschaften"
+                                        checked="" data-column="4" data-pref-id="props"><span
+                                        class="slider"></span></label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="rowgroup" class="flexTableBody">
+        <div role="rowgroup" class="flexGroup active fbox" id="FBox">
+            <div role="row" class="flexGroupHeader">Diese FRITZ!Box</div>
+            <div role="row" class="flexRow network list">
+                <div role="cell" prefid="name" id="Name" class="flexCell alignTop title title_data [object Object] dyn2"
+                    title="FRITZ!Box XXXX" data-label="Name" style="width: 8rem;"><a
+                        href="/loremipsum"
+                        target="_blank">FRITZ!Box XXXX</a></div>
+                <div role="cell" prefid="connect" id="Connect" defaultstate="show" class="flexCell alignTop dyn2"
+                    data-label="Verbindung" style="width: 8rem;">
+                    <div class="portitem active ata"><span>WAN</span>, <span class="">verbunden</span></div>
+                </div>
+                <div role="cell" prefid="ip" defaultstate="show" class="flexCell alignTop ip dyn2" title="192.168.178.1"
+                    data-label="IP-Adresse" style="width: 5rem;">192.168.178.1</div>
+                <div role="cell" prefid="mac" defaultstate="hide" class="flexCell alignTop mac dyn2"
+                    title="XX:XX:XX:XX:XX:01" data-label="MAC-Adresse" style="width: 5rem;">XX:XX:XX:XX:XX:01</div>
+                <div role="cell" prefid="props" defaultstate="show" class="flexCell alignTop dyn2"
+                    data-label="Eigenschaften" style="width: 5.5rem;">
+                    <div class=""><span>WLAN 2,4 / 5 GHz</span></div>
+                    <div class=""><span>Gastzugang an</span></div>
+                </div>
+                <div role="cell" class="flexCell netOverViewElemButtons dyn1" style="width: 6rem;"></div>
+            </div>
+        </div>
+        <div role="rowgroup" empty="Keine Geräte mit aktiver Verbindung" class="flexGroup active network"
+            id="ActiveNetwork">
+            <div role="row" class="flexGroupHeader">Aktive Verbindungen</div>
+            <div role="row" class="flexRow network list">
+                <div role="cell" prefid="name" id="Name" class="flexCell alignTop title title_data globe_online dyn2"
+                    title="Lorem Ipsum" data-label="Name" style="width: 8rem;"><span
+                        class="">Lorem Ipsum</span></div>
+                <div role="cell" prefid="connect" id="Connect" defaultstate="show" class="flexCell alignTop dyn2"
+                    data-label="Verbindung" style="width: 8rem;">
+                    <div class="portitem wlan">
+                        <div class="" title="WLAN">WLAN</div>
+                    </div>
+                    <div class="subdetails">
+                        <div class="connected_via"><span>verbunden mit&nbsp;</span><span
+                                class="subcontent">Sample Fritz!Box</span></div>
+                    </div>
+                </div>
+                <div role="cell" prefid="ip" defaultstate="show" class="flexCell dyn2" data-label="IP-Adresse"
+                    style="width: 5rem;">
+                    <div class="alignTop ip">
+                        <div class="alignTop ip" title="192.168.178.XX">192.168.178.XX</div>
+                    </div>
+                </div>
+                <div role="cell" prefid="mac" defaultstate="hide" class="flexCell alignTop mac dyn2"
+                    title="XX:XX:XX:XX:XX:02" data-label="MAC-Adresse" style="width: 5rem;">XX:XX:XX:XX:XX:02</div>
+                <div role="cell" prefid="props" defaultstate="show" class="flexCell alignTop dyn2"
+                    data-label="Eigenschaften" style="width: 5.5rem;">
+                    <div class="properties"><span>5 GHz, 866 / 866 Mbit/s</span></div>
+                </div>
+                <div role="cell" class="flexCell alignTop buttonView dyn1" style="width: 6rem;"><button
+                        class="icon edit" id="edit_landevice7473" name="edit" value="landevice7473"
+                        title="Bearbeiten"></button><button class="icon delete  hidden" id="delete_landevice7473"
+                        name="delete" value="landevice7473" title="Löschen"></button></div>
+            </div>
+        </div>
+    </div>
+</div>
