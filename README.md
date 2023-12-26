@@ -1,5 +1,5 @@
 # fritzbox-networkconnections-convert
-convert Fritz!Box' network connections list into a csv
+This script helps to convert Fritz!Box' network connections list into a CSV-file.
 
 There is no simple way to export all network connections from an AVM Fritz!Box. Backups only contain active devices and the web interface does not offer an export.
 
